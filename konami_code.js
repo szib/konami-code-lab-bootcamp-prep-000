@@ -18,7 +18,7 @@ function init() {
   function onKeyDownHandler(e) {
     const key = e.key;
     
-    if (key !== codes[idx]) {
+    if (key === codes[idx]) {
       if (++idx === codes.length) {
         idx = 0;
         alert("Well done.");
