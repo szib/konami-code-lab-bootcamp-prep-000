@@ -13,5 +13,17 @@ const codes = [
 
 function init() {
   // your code here
-  console.log(codes)
+  let idx = 0;
+  
+  function onKeyDownHandler(e) {
+    const key = e.key;
+    
+    key === codes[idx]
+      ? idx++
+      : idx = 0
+      
+    if (idx === codes.length) {
+      alert("Well done.")
+    }
+  }
 }
