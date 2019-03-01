@@ -28,6 +28,6 @@ function init() {
     }
   }
   
-  // let body = document.body
-  console.log(document.body)
+  document.body.addEventListener('keydown', onKeyDownHandler)
+  // console.log(document.body)
 }
