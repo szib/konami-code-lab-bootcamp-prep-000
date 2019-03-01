@@ -18,16 +18,15 @@ function init() {
   function onKeyDownHandler(e) {
     const key = e.key;
     
-    key === codes[idx]
-      ? idx++
-      : idx = 0
+    if (key !== codes[idx]) {
+      if (++idx === codes.length) {
+        idx = 0;
+        alert("Well done.");
+      }
+    } else idx = 0;
       
-    if (idx === codes.length) {
-      idx = 0;
-      alert("Well done.");
-    }
+  
   }
   
   document.body.addEventListener('keydown', onKeyDownHandler)
-  // console.log(document.body)
 }
