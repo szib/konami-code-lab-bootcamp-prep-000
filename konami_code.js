@@ -24,8 +24,6 @@ function init() {
         alert("Well done.");
       }
     } else idx = 0;
-      
-  
   }
   
   document.body.addEventListener('keydown', onKeyDownHandler)
