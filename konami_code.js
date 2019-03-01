@@ -27,4 +27,6 @@ function init() {
       alert("Well done.");
     }
   }
+  
+  document.add
 }
