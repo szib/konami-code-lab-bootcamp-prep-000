@@ -23,7 +23,8 @@ function init() {
       : idx = 0
       
     if (idx === codes.length) {
-      alert("Well done.")
+      idx = 0;
+      alert("Well done.");
     }
   }
 }
