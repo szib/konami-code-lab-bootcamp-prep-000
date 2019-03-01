@@ -28,5 +28,6 @@ function init() {
     }
   }
   
-  document.add
+  // let body = document.body
+  console.log(document.body)
 }
